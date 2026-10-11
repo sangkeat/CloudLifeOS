@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudLifeOS • ทางเชื่อมเครื่องพัฒนา</title>
+  <link rel="stylesheet" href="/app.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<main>
+  <header><div><p class="eyebrow">LIFEOS / CLOUD WORKSPACE</p><h1>ความพร้อมของทางเชื่อม</h1><p>ตรวจหลักฐานก่อนรับงาน • อ่านอย่างเดียว • ใช้สมองกลางเดิม</p></div><button id="refresh" type="button">อ่านสถานะอีกครั้ง</button></header>
+  <p id="notice" class="notice" role="status" aria-live="polite">กำลังอ่านสถานะเครื่องพัฒนา…</p>
+  <section aria-labelledby="health-title"><h2 id="health-title">การเชื่อมต่อและความพร้อมใช้งาน</h2><p class="muted">“เชื่อมต่อ” “ยืนยันตัวตน” “อนุญาตในขอบเขต” และ “ทดสอบใช้งานผ่าน” เป็นคนละเงื่อนไข</p><div id="channels" class="channels"></div></section>
+  <section class="panel" aria-labelledby="mission-title"><p class="eyebrow">ภารกิจรอบนี้</p><h2 id="mission-title">เตรียมทางเชื่อม CloudLifeOS</h2><p>กำลังเตรียมส่วนอ่านข้อมูลและตรวจความสดของหลักฐาน ยังไม่ใช่ Owner Workspace v0.8</p><p id="next-action">รอข้อมูลที่ตรวจกลับได้</p><p class="muted">เป้าหมาย Owner-readable Dashboard เดิมใน Foundry ระบุว่าเสร็จแล้ว งานรอบนี้เพิ่มทางเชื่อมคลาวด์และเก็บผลงานเดิมไว้</p></section>
+  <details class="panel" id="source-panel"><summary>สมองกลางและแหล่งข้อมูล</summary><div id="source" class="detail"></div><div id="snapshots" class="detail"></div></details>
+  <details class="panel" id="monitor-panel"><summary>เปิดเครื่องมือตรวจสอบเดิมจาก Foundry</summary><p class="notice">ข้อมูลใน Monitor เป็น snapshot จาก repository และสถานะบทบาทเฉพาะเครื่องพัฒนานี้ ห้ามใช้เป็นหลักฐาน runtime ของ PiDzPC หรือแช็ตอื่น</p><iframe id="monitor" title="LifeOS Monitor เดิม — ข้อมูล snapshot" sandbox="allow-scripts allow-same-origin" loading="lazy"></iframe></details>
+  <footer>ข้อมูลโครงการอยู่ใน CloudLifeOS • กฎระบบอยู่ใน LifeOS-Foundry • ไม่มีการเผยแพร่ production</footer>
+</main>
+</body></html>

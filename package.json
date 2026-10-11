@@ -1,0 +1,13 @@
+{
+  "name": "cloudlifeos",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only Cloud adapter for the existing LifeOS monitor; Owner Workspace v0.8 integration pending",
+  "scripts": {
+    "setup": "python3 scripts/bootstrap.py",
+    "start": "python3 -m cloudlifeos.server",
+    "test": "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {"@playwright/test": "1.58.2"}
+}
